@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 40pt;
+    background-color: #1E88E5;
+}
+
+header > h1, header > a {
+    display: block;
+    position: absolute;
+    font-family: Waree;
+    color: #E3F2FD;
+}
+
+header > h1 {
+    left: 30pt;
+    line-height: 40pt;
+    font-size: 25pt;
+}
+
+header > a {
+    right: 15pt;
+    line-height: 40pt;
+    font-weight: bold;
+    font-size: 15pt;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+header > a:hover {
+    color: #F44336;
+}
+
+div#main {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: 50pt;
+    width: 800px;
+    height: 500px;
+    background-color: aqua;
+}
