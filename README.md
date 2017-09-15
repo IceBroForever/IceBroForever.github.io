@@ -1,2 +1,2 @@
 # IceBroForever.github.io
-City for lab1
+Site for lab1
