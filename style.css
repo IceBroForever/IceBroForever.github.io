@@ -1,0 +1,47 @@
+@import "http://fonts.fontstorage.com/import/nautilus.css";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: fixed url("background.jpeg") top left;
+    background-size: 100%;
+}
+
+div#main {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20%;
+    height: 40%;
+    border-radius: 1cm;
+    margin: auto;
+    text-align: right;
+    color: #FAFAFA;
+    font-family: 'Nautilus Pompilius';
+}
+
+div#main h1 {
+    font-size: 2cm;
+    margin-bottom: 1cm;
+}
+
+div#main a {
+    display: inline-block;
+    padding: 0.5cm;
+    font-size: 1cm;
+    text-decoration: none;
+    border-radius: 1cm;
+    margin-right: -0.5cm;
+    transition: background 0.5s;
+}
+
+div#main a:visited{
+    color: #FAFAFA;
+}
+
+div#main a:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
