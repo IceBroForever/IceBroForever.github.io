@@ -1,0 +1,128 @@
+@import "main.css";
+
+div#shadow {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 20, 20, 0.9);
+}
+
+div#head {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 7cm;
+}
+
+div#head h1 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 2cm;
+    text-shadow: 0.25cm 0.25cm 0.25cm #000000;
+}
+
+ul#list {
+    display: block;
+    position: relative;
+    width: 20cm;
+    margin: 0 auto 2cm auto;
+    list-style: none;
+    text-shadow: 0.1cm 0.1cm 0.1cm #000000;
+}
+
+ul#list li {
+    display: block;
+    position: relative;
+    height: 4cm;
+    width: 100%;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    border-image: linear-gradient(to right, rgba(20, 20, 20, 0.9), #9E9E9E, rgba(20, 20, 20, 0.9));
+    border-image-slice: 1;
+    transition: transform 0.2s, background 0.2s;
+    margin-top: -1px;
+    line-height: 100%;
+    z-index: 0;
+}
+
+ul#list li:first-of-type {
+    border-top: none;
+}
+
+ul#list li:last-of-type{
+    border-bottom: none;
+}
+
+ul#list li:hover{
+    transform: scale(1.5);
+    background-color: rgba(20, 20, 20, 1);
+    z-index: 1000;
+}
+
+ul#list li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #FAFAFA;
+}
+
+ul#list li > a:visited {
+    color: #FAFAFA;
+}
+
+div.smallContainer{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 4cm;
+    width: 4cm;
+}
+
+div.smallContainer > h1.number{
+    display: block;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 1pt;
+    text-align: center;
+}
+
+div.smallContainer > img {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 3.5cm;
+}
+
+div.bigContainer {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 100%;
+    width: auto;
+    margin-left: 1cm;
+}
+
+div.bigContainer > h1.name {
+    display: block;
+    position: relative;
+    margin-top: 1cm;
+    font-family: "Century Schoolbook L";
+    font-weight: bold;
+}
+
+div.bigContainer > h3.author {
+    display: block;
+    position: relative;
+    margin-top: 0.5cm;
+    font-family: "Century Schoolbook L";
+    font-weight: normal;
+}

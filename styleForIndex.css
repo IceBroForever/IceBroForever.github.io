@@ -1,18 +1,7 @@
-@font-face {
-    font-family: 'Nautilus Pompilius';
-    src: url("Nautilus.otf");
-    font-weight: 400;
-    font-style: normal;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
+@import "main.css";
 
 body {
-    background: fixed url("background.jpeg") top left;
-    background-size: 100%;
+    text-shadow: 0.25cm 0.25cm 0.25cm #000000;
 }
 
 div#main {
@@ -24,8 +13,6 @@ div#main {
     border-radius: 1cm;
     margin: auto;
     text-align: right;
-    color: #FAFAFA;
-    font-family: 'Nautilus Pompilius';
 }
 
 div#main h1 {
@@ -49,4 +36,16 @@ div#main a:visited{
 
 div#main a:hover{
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+div#main a:active{
+    transition: background 0.2s;
+    background-color: #D84315;
+}
+
+footer {
+    position: absolute;
+    bottom: 0.5cm;
+    left: 0.5cm;
+    font-size: 0.7cm;
 }
